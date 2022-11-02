@@ -6,263 +6,196 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/bootstrap.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-
-    <script>
-        $(document).ready(function () {
-            $('#icon').click(function () {
-                $('ul').toggleClass('show')
-            });
-        });
-
-
-    </script>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
-    <link rel="stylesheet" href="style.css" class="rel">
+    <script src="https://kit.fontawesome.com/bb8bfa23e9.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
-    <nav>
-        <label class="logo">Ravita</label>
-        <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <span class="a1">R</span>
+                    <span class="a2">A</span>
+                    <span class="a1">V</span>
+                    <span class="a2">I</span>
+                    <span class="a1">T</span>
+                    <span class="a2">A</span>
+                </div>
 
-        </ul>
-        <label id="icon">
-            <i class="material-icons" style="font-size: 30px;">menu</i>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
 
-        </label>
-
-    </nav>
-    <section>
-
-
-
-    </section>
-    <!-- ******************************************About************************************************** -->
+            </nav>
+            <div class="header-text">
+                <p>Web Designer</p>
+                <h1>Hi, I'm <span>Ravita</span> from India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------about us section------------------------ -->
     <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/me.jpg">
+                    <img src="images/ravita.jpeg" alt="">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, quod, quibusdam sint,
-                        ducimus maiores voluptate culpa excepturi ad adipisci numquam quo facere aspernatur magni nam?
-                        Distinctio recusandae nihil, sed quia ratione odio harum dolores labore mollitia, illo
-                        architecto voluptatem illum pariatur tempora voluptas numquam modi explicabo inventore nulla
-                        excepturi totam? Id minus autem amet nostrum sequi perspiciatis quam aut tempore voluptatibus
-                        architecto nihil dicta assumenda voluptatum, tenetur at necessitatibus? Vero beatae in,
-                        obcaecati impedit, fuga, quidem enim maxime natus animi doloremque doloribus! Nesciunt
-                        temporibus modi ab est earum molestias consequuntur. Quidem explicabo fuga aliquid sit ut
-                        assumenda voluptates facere culpa.</p>
-
+                    <p>I am Ravita Prajapati. I am from Maharajganj Uttar Pradesh India. I am a fullStack Developer. I have good knowledge in JAVA, HTML, CSS,
+                        JAVASCRIPT, SQL, JAVA SWING, JDBC and BootStrap also. I have done my graduation in Computer Science and Engineering. I have also completed Java fullStack development course
+                        for 6 month and also done summer training on fullStack web development. I am aa comptetive coder on HackerRank. I have earned 5 Star on HackerRank in Java Programming Language and also 
+                        3 star for JavaScript.
+                    </p>
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
 
+
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
+                            <li><span>JAVA</span></li>
                             <li><span>HTML</span></li>
                             <li><span>CSS</span></li>
                             <li><span>JAVASCRIPT</span></li>
-                            <li><span>JAVA</span></li>
                             <li><span>SQL</span></li>
-                            <li><span>COLLECTION FRAMEWORK</span></li>
+                            <li><span>JDBC</span></li>
+                            <li><span>JAVA SWING</span></li>
+                            <li><span>BOOTSTRAP</span></li>
+                            
                         </ul>
                     </div>
-
 
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>FRESHER</span><br>Currently I am fresher for the companies<br>but myself i have
-                                practiced on HTML CSS and JAVA also.</li>
-
+                            <li><span>HTML</span><br>5 year Experience on html</li>
+                            <li><span>CSS</span><br>2 year Experience on CSS</li>
+                            <li><span>JAVA</span><br>6 month Experience on java</li>
                         </ul>
                     </div>
-
 
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>B.TECH</span><br>From Buddha Institute of Technology<br>Gorakhpur Uttar
-                                Pradesh<br>In Year of 2022</li>
-                            <li><span>DIPLOMA</span><br>From Mahamaya IT Polytechnic<br>Maharajganj Uttar Pradesh<br> In
-                                Year of 2019</li>
-                            <li><span>HIGH SCHOOL</span>From G. S. V. S. Inter College<br>Maharajganj Uttar Pradesh<br>
-                                In Year of 2016</li>
-
+                            <li><span>B.Tech</span><br>From Buddha Institute of Technology Gorakhpur Uttar Pradesh</li>
+                            <li><span>Diploma</span><br>From Mahamaya IT Polytechnic Maharajganj Uttar Pradesh</li>
+                            <li><span>HighSchool</span><br>From G. S. V. S. Inter College Maharajganj Uttar Pradesh</li>
                         </ul>
                     </div>
-
-
-
-
                 </div>
             </div>
         </div>
     </div>
-    <!-- ******************************************About************************************************** -->
 
-    <!-- ***********************************************Services******************************************** -->
+    <!-- ------------------------------services------------------------------------ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I can create an awesome website for you using html css and JavaScript.
+                        I can design a web templete for your website.
+                        <i class="fa-solid fa-code-simple"></i>
 
 
-
-   
-    <div class="services">
-        <div class="services-row">
-            <div class="services-title">
-                <h1 class="sub-title">Services</h1>
-            </div>
-           
-            <div class="card" style="width: 20rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Website Design</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
+                    </p>
+                    <a href="#">learn more</a>
                 </div>
-            </div>
 
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>App Design</h2>
+                    <p>I can create desktop based application using java swing and jdbc.
+                        I will give my best for your project. you would like to that.
 
-            <div class="card" style="width: 20rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Java Programs</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
+                    </p>
+                    <a href="#">learn more</a>
                 </div>
-            </div>
 
 
-            <div class="card" style="width: 20rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Java Application</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Problem Solving</h2>
+                    <p>If you have any problem in your java program or html css whatever, you can ask my through the contact section of my website. 
+
+                    </p>
+                    <a href="#">learn more</a>
                 </div>
-            </div>
 
-            <div class="card" style="width: 20rem;">
-                <div class="card-body">
-                    <h5 class="card-title">SQL Database</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
-                </div>
             </div>
         </div>
-
     </div>
-
-
-
-
-
-
-
-    <!-- ***********************************************Services******************************************** -->
-
-
-
-    <!-- *************************************************Portfolio***************************************** -->
+    <!-- -----------------------------portfolio-------------------------------- -->
     <div id="portfolio">
         <div class="container">
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="images/computer.jpg">
+                    <img src="images/image1.jpg" alt="">
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptate corporis quis
-                            odit consequuntur voluptatem libero, asperiores veniam quaerat necessitatibus.</p>
-                        <button class="btn"><a href="#">Learn More</a></button>
+                        <h3>Personal Portfolio Website</h3>
+                        <p>Recently i have completed my personal portfolio website. this is an awesome poject.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/computer1.jpg">
+                    <img src="images/image2.jpg" alt="">
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptate corporis quis
-                            odit consequuntur voluptatem libero, asperiores veniam quaerat necessitatibus.</p>
-                        <button class="btn"><a href="#">Learn More</a></button>
+                        <h3>Food Delivery System</h3>
+                        <p>This project is a templete of food delivery web application</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/computer2.jpg">
+                    <img src="images/image3.jpg" alt="">
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptate corporis quis
-                            odit consequuntur voluptatem libero, asperiores veniam quaerat necessitatibus.</p>
-                        <button class="btn"><a href="#">Learn More</a></button>
+                        <h3>Calculator with extra feature</h3>
+                        <p>This project is not a calculator. It can check which number is Strong number or not, Perfect number of not of find out the factorial of a number</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
+            <a href="#" class="btn">See More</a>
         </div>
     </div>
 
 
 
 
-
-
-    <!-- ****************************************************portfolio**************************************** -->
-
-
-
-
-
-    <!--******************************************************contact********************************************* -->
+    <!-- ------------------------------------------------contact us---------------------------------------------------------- -->
     <div id="contact">
         <div class="container">
-            <div class="row1">
+            <div class="row">
                 <div class="contact-left">
-                    <h1 class="sub-title">Contact Us</h1>
-                    <P><i class="fa fa-envelope" aria-hidden="true"></i> ravitaprajapati435@hmail.com</P>
-                    <p><i class="fa fa-phone-square" aria-hidden="true"></i> 7880508014</p>
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>ravitaprajapati435@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7880508014</p>
                     <div class="social-icons">
-                        <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        <a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-                        <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
-                        <a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
                     </div>
-                   <a href="images/Ravita_Resume1.pdf" download class="btn btn2">Download CV</a>
-
-                    
-
-
+                    <a href="images/resume.pdf" download class="btn">Download CV</a>
+                    <!-- <a href="images/resume.pdf" download class="btn">Donload CV</a> -->
                 </div>
                 <div class="contact-right">
                     <form>
-                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="name" placeholder="Your Name" required>
                         <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <textarea name="message" rows="10" placeholder="Your message"></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
 
@@ -270,34 +203,36 @@
             </div>
         </div>
         <div class="copyright">
-            <p><i class="fa fa-heart" aria-hidden="true"></i>    Made by Ravita Prajapati</p>
+            <p>Copyright @ Ravita. Made with<i class="fa-solid fa-heart"></i></p>
         </div>
-
     </div>
 
 
-
-
-    <!-- ***************************************************contact  ************************************************* -->
-
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents")
+        var tabcontents = document.getElementsByClassName("tab-contents");
         function opentab(tabname) {
             for (tablink of tablinks) {
                 tablink.classList.remove("active-link");
             }
-
             for (tabcontent of tabcontents) {
                 tabcontent.classList.remove("active-tab");
             }
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
+        }
 
+
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
         }
     </script>
-
-
 
 
 </body>
